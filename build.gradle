@@ -1,0 +1,28 @@
+group 'ro.andonescu.playground.gcp'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+subprojects {
+    version '1.0-SNAPSHOT'
+}
+
+subprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile 'com.google.cloud:google-cloud-pubsub:1.48.0'
+        compile group: 'io.vavr', name: 'vavr', version: '0.9.2'
+    }
+}

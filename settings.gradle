@@ -1,0 +1,3 @@
+rootProject.name = 'pubsub'
+include 'reader'
+include 'writer'
